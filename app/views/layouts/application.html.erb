@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Striped</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+    <%= javascript_include_tag 'https://js.stripe.com/v2/' %>
+
+    <%= csrf_meta_tags %>
+
+  </head>
+  <body>
+    <!-- search engine -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="" height="10px" width="10px" />
+          <%= text_field_tag :Search, nil, placeholder: 'Cauta',  class:'search-box'%>
+        </div>
+        <div class="col-md-6">
+          <!-- middle empty -->
+        </div>
+        <!-- top links -->
+        <div class="header-menu">
+          <%= link_to 'Ajutor', controller: 'home', action: 'index' %>
+        </div>
+        <div class="header-menu">
+          <%= link_to 'Contact', controller: 'home', action: 'index' %>
+        </div>
+        <div class="header-menu">
+          <%= link_to 'Contul meu', controller: 'home', action: 'index' %>
+        </div>
+        <div class="header-menu">
+          <%= link_to 'Comenzile mele', controller: 'home', action: 'index' %>
+        </div>
+      </div>
+
+      <!-- menu links -->
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+          <h1>
+            <%= link_to 'Magazinul meu', controller: 'home', action: 'index' %>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <!-- empty -->
+        </div>
+        <div class="col-md-1">
+          <%= link_to 'Noutati', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-1">
+          <%= link_to 'Women', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-1">
+          <%= link_to 'Men', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-1">
+          <%= link_to 'Boys and Girls', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-1" style="padding: 0">
+          <%= link_to 'Personal Tailoring', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-1">
+          <%= link_to 'Editorial', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-3">
+          <!-- empty -->
+        </div>
+      </div>
+      <hr>
+    </div>
+    <%= yield %>
+    <div class="row" style="margin-bottom:0;">
+      <div class="footer">
+        <div class="col-md-4">
+          <%= link_to 'Apps', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-4">
+          <%= link_to 'Location', controller: 'home', action: 'index' %>
+        </div>
+        <div class="col-md-4">
+          <%= link_to 'Newsletter', controller: 'home', action: 'index' %>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align:center; background-color:#333333; color:#fff; margin-bottom:0;">
+      <div class="col-md-2">
+        <!-- empty -->
+      </div>
+      <div class="col-md-8">
+        <div class="row" style="padding-top: 35px;">
+          <div class="col-md-2">
+            <%= link_to 'Edits and Places', controller: 'home', action: 'index' %>
+          </div>
+          <div class="col-md-2" style="padding:0">
+            <%= link_to 'Politica privind Cookie-urile', controller: 'home', action: 'index' %>
+          </div>
+          <div class="col-md-2">
+            <%= link_to 'Newsletter', controller: 'home', action: 'index' %>
+          </div>
+          <div class="col-md-2">
+            <%= link_to 'Societatea', controller: 'home', action: 'index' %>
+          </div>
+          <div class="col-md-2">
+            <%= link_to 'Inditex Careers', controller: 'home', action: 'index' %>
+          </div>
+          <div class="col-md-2">
+            <%= link_to 'Contact', controller: 'home', action: 'index' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <!-- empty -->
+      </div>
+    </div>
+
+  </body>
+</html>
