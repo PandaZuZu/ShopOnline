@@ -1,8 +1,18 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 .item-tag-price{
   text-align: center;
   font-size: 20px;
   font-style: oblique;
+}
+
+.item-tag-detail{
+  font-size: 20px;
+  font-style: oblique;
+  @extend .col-md-4;
 }

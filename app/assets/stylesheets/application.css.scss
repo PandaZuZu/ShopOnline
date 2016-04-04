@@ -47,11 +47,19 @@
   }
 }
 
+.footer-links{
+  a{
+    color: #fff;
+  }
+  @extend .col-md-2;
+}
+
 .footer{
   text-align: center;
-  .col-md-4{
+  .footer-apps{
     height: 100px;
     background-color: #dddddd;
     padding-top: 35px;
+    @extend .col-md-4;
   }
 }

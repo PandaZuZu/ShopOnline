@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-2">
+    <!-- empty -->
+  </div>
+  <!-- item -->
+  <% for i in 1..@itemsPerPage %>
+    <%= content_tag :div, nil, class: @itemDivClass do -%>
+      <img src="http://static.massimodutti.net/3/static2/img/cabeceras_parrillas/2016/men/nuevo/new_men_web.jpg?20160324041000" width="100%" height="100%" />
+      <div class="item-tag-price">
+        Camasa slim cu imprimeu <br>
+        ----- 200 lei -----
+      </div>
+    <% end %>
+  <% end %>
+  <div class="col-md-2">
+    <!-- empty -->
+  </div>
+</div>
